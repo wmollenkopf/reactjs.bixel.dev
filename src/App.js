@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Heading from './components/Heading/Heading.js';
 import Navbar from './components/Navbar/Navbar.js';
 import Profile from './components/Profile/Profile.js';
 import './App.css';
-
-
 
         // <Experiences/>
         // <Abilities/>
