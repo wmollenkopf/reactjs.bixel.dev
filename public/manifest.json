@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "William Mollenkopf's Interactive Resume",
+  "name": "William Mollenkopf's Interactive Resume - Programmer, Systems Administrator, 日本語の学生",
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,5 +11,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#EBF1F3"
 }
