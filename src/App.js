@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Heading from './components/Heading/Heading.js';
 import Navbar from './components/Navbar/Navbar.js';
 import Profile from './components/Profile/Profile.js';
+import Experiences from './components/Experiences/Experiences.js';
 import './App.css';
 
         // <Experiences/>
@@ -35,6 +36,7 @@ class App extends Component {
         <Heading viewportHeight={this.state.height}/>
         <Navbar/>
         <Profile/>
+        <Experiences/>
       </div>
     );
   }

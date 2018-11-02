@@ -7,7 +7,7 @@ h2,h3 { font-weight: 300; color: #151949; }
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
-.background-snowwhite { background: #EBF1F3; }
+.background-snowblue { background: #DAE6F1; }
 .container { max-width: 1280px; padding: 40px 180px; }
 hr { margin: 40px 0px; border-color: #58637d; opacity: 0.2; filter:alpha(opacity=20); }
 
@@ -15,8 +15,13 @@ p.lead { text-align: center; color: #58637d; }
 p.lead a { color: #FFFFFF; text-decoration: underline; }
 p.lead a:hover { text-decoration: none; }
 
+#experiences .experience { margin-bottom: 20px; }
+#experiences .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
+#experiences .experience .experience-details { display: block; margin-top: 6px; }
+#experiences .experience .experience-details * { color: #151949; }
+#experiences .experience .experience-details .seperator { color: #BCBCBC; }
 
-
-.profileImage {width: 250px; height: 250px; border-radius: 50%; border: 3px solid #6C6F7C;}
-#profile .row > div { margin-bottom: 20px; }
-#profile .row > div img { width: 100%; max-width: 246px; height: auto; }
+@media (max-width: 767px) { 
+	#experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
+	#experiences .experience .experience-details .seperator { display: none; }
+}
