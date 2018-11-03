@@ -15,14 +15,23 @@ p.lead { text-align: center; color: #58637d; }
 p.lead a { color: #FFFFFF; text-decoration: underline; }
 p.lead a:hover { text-decoration: none; }
 
+ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 
 .btn-primary {border-color: #326FBA; }
 .btn-primary:hover {border-color: #326FBA; }
 
-.profileImage {width: 250px; height: 250px; border-radius: 50%; border: 3px solid #6C6F7C;}
-#profile .row > div { margin-bottom: 20px; }
-#profile .row > div img { width: 100%; max-width: 246px; height: auto; }
-
-@media (max-width: 767px) { 
-	#profile .row * { text-align: center; }
-}  
+#abilities ul > li { min-height: 30px; padding: 3px 0px; }
+#abilities ul > li:hover { background: #E0E7ED; }
+#abilities ul > li .ability-title { display: inline-block; width: 60%; }
+#abilities ul > li .ability-score { float: right; }
+#abilities ul > li .ability-score .glyphicon { 
+	color: #CACACA; 
+	font-size: 14px; 
+	 
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#abilities ul > li .ability-score .glyphicon.filled { color: #326FBA; }
+#abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 

@@ -3,6 +3,7 @@ import Heading from './components/Heading/Heading.js';
 import Navbar from './components/Navbar/Navbar.js';
 import Profile from './components/Profile/Profile.js';
 import Experiences from './components/Experiences/Experiences.js';
+import Abilities from './components/Abilities/Abilities.js';
 import './App.css';
 
         // <Experiences/>
@@ -13,8 +14,12 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {height: props.height,width: props.width};
+    this.state = {
+                  height: props.height,
+                  width: props.width,
+                };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.updateWindowScroll = this.updateWindowScroll.bind(this);
   }
 
   componentDidMount() {
@@ -24,10 +29,23 @@ class App extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener('scroll', this.updateWindowDimensions);
+  }
+  
+  componentDidUpdate () {
+    window.addEventListener('scroll', this.updateWindowScroll);
   }
 
+  updateWindowScroll() {
+    if(document.documentElement.scrollTop > (document.getElementById("scroll-down").offsetTop+20)){
+      document.body.classList.add("fixed");
+    } else {
+      document.body.classList.remove("fixed");
+    }
+    
+  }
   updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    this.setState({ width: window.innerWidth, height: window.innerHeight});
   }
 
   render() {
@@ -37,6 +55,7 @@ class App extends Component {
         <Navbar/>
         <Profile/>
         <Experiences/>
+        <Abilities/>
       </div>
     );
   }

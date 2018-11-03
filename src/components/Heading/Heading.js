@@ -12,7 +12,7 @@ const Heading = ({viewportHeight}) => {
 				<p className="lead">Programmer | Systems Administrator | 日本語の学生</p>
 			</div>
 			<div className="overlay"></div>
-				<a href="#profile" className="scroll-down">	
+				<a href="#profile" className="scroll-down" id="scroll-down">	
 					<span className="glyphicon glyphicon-chevron-down"></span>
 				</a>
 		</div>
