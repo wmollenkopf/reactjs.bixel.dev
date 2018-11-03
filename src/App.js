@@ -4,12 +4,9 @@ import Navbar from './components/Navbar/Navbar.js';
 import Profile from './components/Profile/Profile.js';
 import Experiences from './components/Experiences/Experiences.js';
 import Abilities from './components/Abilities/Abilities.js';
+import Projects from './components/Projects/Projects.js';
 import './App.css';
 
-        // <Experiences/>
-        // <Abilities/>
-        // <Projects/>
-        // <Contact/>
 
 class App extends Component {
   constructor(props) {
@@ -56,6 +53,7 @@ class App extends Component {
         <Profile/>
         <Experiences/>
         <Abilities/>
+        <Projects/>
       </div>
     );
   }

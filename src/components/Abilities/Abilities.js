@@ -3,7 +3,6 @@ import './Abilities.css';
 
 
 const Abilities = () => {
-   
 	return (
 		<div className="background-snowwhite">
 			<div id="abilities" className="container">
