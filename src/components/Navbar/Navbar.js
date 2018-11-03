@@ -24,10 +24,8 @@ const Navbar = () => {
         	// penelty of mixing jQuery with ReactJS instead of using react-scrollspy.
             console.log('error', e); 
         }
-
-		
-
 		$('.navbar-collapse').removeClass('in').addClass('collapse'); // cell phone fix for styling
+
 		return false;
 	};
 
@@ -43,10 +41,6 @@ const Navbar = () => {
 		//         scrollTo(element, to, duration - 10);
 		//     }, 10);
 		// };
-
-	// $('#navbar-example').on('activate.bs.scrollspy', function() {
-	// 	window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
-	// });
 
 	return (
 		<nav className="navbar navbar-default" id="navbar-example" role="navigation">
@@ -64,12 +58,12 @@ const Navbar = () => {
 
 			<div className="collapse navbar-collapse navbar-ex1-collapse">
 				<ul className="nav navbar-nav">
-					<li className="active"><a href="#profile" onClick={handleClick}>Profile</a></li>
-					<li><a href="#experiences" onClick={handleClick}>Experiences</a></li>
-					<li><a href="#abilities" onClick={handleClick}>Abilities</a></li>
-					<li><a href="#projects" onClick={handleClick}>Projects</a></li>
-					<li><a href="#contact" onClick={handleClick}>Contact</a></li>
-					<li style={{'display' : 'none'}}><a href="#cv" onClick={handleClick}>CV</a></li>
+					<li id="profileSpy" className="active"><a href="#profile" onClick={handleClick}>Profile</a></li>
+					<li id="experiencesSpy" ><a href="#experiences" onClick={handleClick}>Experiences</a></li>
+					<li id="abilitiesSpy" ><a href="#abilities" onClick={handleClick}>Abilities</a></li>
+					<li id="projectsSpy" ><a href="#projects" onClick={handleClick}>Projects</a></li>
+					<li id="contactSpy" ><a href="#contact" onClick={handleClick}>Contact</a></li>
+					<li id="cvSpy" style={{'display' : 'none'}}><a href="#cv" onClick={handleClick}>CV</a></li>
 				</ul>
 			</div>
 		</nav>

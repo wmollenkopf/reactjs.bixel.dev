@@ -109,7 +109,7 @@ const Experiences = () => {
 						<strong>Associate of Science - Computer Programming &amp; System Analysis</strong>
 						<div className="hidden-phone">
 							<p>I studied various programming languages and scripting languages such as C++, Visual Basic .NET, JavaScript, VBScript as well as studied basic computer skills.</p>
-							<p>I also recieved the &ldquo;BCC's Best&rdquo; award in Computers and Technology during my time at the college.</p>
+							<p>I also received the &ldquo;BCC's Best&rdquo; award in Computers and Technology during my time at the college.</p>
 						</div>
 						<span className="experience-details">
 							<span className="location">
