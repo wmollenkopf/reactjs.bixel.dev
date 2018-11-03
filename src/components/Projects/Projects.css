@@ -15,6 +15,10 @@ p.lead { text-align: center; color: #58637d; }
 p.lead a { color: #FFFFFF; text-decoration: underline; }
 p.lead a:hover { text-decoration: none; }
 
+.btn-primary {border-color: #326FBA; }
+.btn-primary:hover {border-color: #326FBA; }
+
+.projYear {font-weight: bold;}
 
 #projects .row > div { margin-bottom: 30px; }
 #projects figure { position: relative; overflow: hidden; }

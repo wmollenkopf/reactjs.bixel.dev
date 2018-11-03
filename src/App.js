@@ -5,6 +5,7 @@ import Profile from './components/Profile/Profile.js';
 import Experiences from './components/Experiences/Experiences.js';
 import Abilities from './components/Abilities/Abilities.js';
 import Projects from './components/Projects/Projects.js';
+import Contact from './components/Contact/Contact.js';
 import './App.css';
 
 
@@ -54,6 +55,7 @@ class App extends Component {
         <Experiences/>
         <Abilities/>
         <Projects/>
+        <Contact/>
       </div>
     );
   }
