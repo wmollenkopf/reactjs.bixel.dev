@@ -37,7 +37,7 @@ const Abilities = () => {
 					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
-								<span className="ability-title">日本語 (Japanese) (JLTP4)</span>
+								<span className="ability-title">日本語 (Japanese) (~JLPT5)</span>
 								<span className="ability-score">
 									<span className="glyphicon glyphicon-star filled"></span>
 									<span className="glyphicon glyphicon-star filled"></span>
