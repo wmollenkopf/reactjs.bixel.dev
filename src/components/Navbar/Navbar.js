@@ -10,41 +10,41 @@ const Navbar = () => {
 		//console.log(e.target)
 		let anchor = e.target.hash;
 		//console.log(anchor);
-		try{
-            if(anchor.length > 0 ) {
-				if(anchor==='#cv') {
-					$('html, body').animate({scrollTop: $(anchor).offset().top}, 400).then($('#past-projects').modal('show'));
+		try {
+			if (anchor.length > 0) {
+				if (anchor === '#cv') {
+					$('html, body').animate({ scrollTop: $(anchor).offset().top }, 400).then($('#past-projects').modal('show'));
 				}
 				else {
-					$('html, body').animate({scrollTop: $(anchor).offset().top}, 400);	
+					$('html, body').animate({ scrollTop: $(anchor).offset().top }, 400);
 				}
 			}
-        }catch(e){
-        	// it will fail if an anchor can't actually be found (if a fake URL is attempted), 
-        	// penelty of mixing jQuery with ReactJS instead of using react-scrollspy.
-            console.log('error', e); 
-        }
+		} catch (e) {
+			// it will fail if an anchor can't actually be found (if a fake URL is attempted), 
+			// penelty of mixing jQuery with ReactJS instead of using react-scrollspy.
+			console.log('error', e);
+		}
 		$('.navbar-collapse').removeClass('in').addClass('collapse'); // cell phone fix for styling
 
 		return false;
 	};
 
-		// TODO: Someday replace jQuery animate with the below
-	    //  const scrollTo = (element, to, duration) => {
-		//     if (duration <= 0) return;
-		//     var difference = to - element.scrollTop;
-		//     var perTick = difference / duration * 10;
+	// TODO: Someday replace jQuery animate with the below
+	//  const scrollTo = (element, to, duration) => {
+	//     if (duration <= 0) return;
+	//     var difference = to - element.scrollTop;
+	//     var perTick = difference / duration * 10;
 
-		//     setTimeout(function() {
-		//         element.scrollTop = element.scrollTop + perTick;
-		//         if (element.scrollTop === to) return;
-		//         scrollTo(element, to, duration - 10);
-		//     }, 10);
-		// };
+	//     setTimeout(function() {
+	//         element.scrollTop = element.scrollTop + perTick;
+	//         if (element.scrollTop === to) return;
+	//         scrollTo(element, to, duration - 10);
+	//     }, 10);
+	// };
 
 	return (
 		<nav className="navbar navbar-default" id="navbar-example" role="navigation">
-			{ /* Brand and toggle get grouped for better mobile display */ }
+			{ /* Brand and toggle get grouped for better mobile display */}
 			<div className="navbar-header">
 				<button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span className="sr-only">Toggle navigation</span>
@@ -53,8 +53,8 @@ const Navbar = () => {
 					<span className="icon-bar"></span>
 				</button>
 			</div>
-			
-			{ /* Collect the nav links, forms, and other content for toggling */ }
+
+			{ /* Collect the nav links, forms, and other content for toggling */}
 
 			<div className="collapse navbar-collapse navbar-ex1-collapse">
 				<ul className="nav navbar-nav">
@@ -63,7 +63,7 @@ const Navbar = () => {
 					<li id="abilitiesSpy" ><a href="#abilities" onClick={handleClick}>Abilities</a></li>
 					<li id="projectsSpy" ><a href="#projects" onClick={handleClick}>Projects</a></li>
 					<li id="contactSpy" ><a href="#contact" onClick={handleClick}>Contact</a></li>
-					<li id="cvSpy" style={{'display' : 'none'}}><a href="#cv" onClick={handleClick}>CV</a></li>
+					<li id="cvSpy" style={{ 'display': 'none' }}><a href="#cv" onClick={handleClick}>CV</a></li>
 				</ul>
 			</div>
 		</nav>

@@ -31,7 +31,7 @@ const Projects = () => {
 					<p className="mb-0">&ldquo;You can do anything you set your mind to.&rdquo;</p>
 					<footer className="blockquote-footer ">Benjamin Franklin</footer>
 				</blockquote>
-				
+
 				<hr />
 
 				<div className="row">
@@ -46,7 +46,7 @@ const Projects = () => {
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
-							</figcaption> 
+							</figcaption>
 						</figure>
 					</div>
 
@@ -61,7 +61,7 @@ const Projects = () => {
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
-							</figcaption> 
+							</figcaption>
 						</figure>
 					</div>
 
@@ -76,7 +76,7 @@ const Projects = () => {
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
-							</figcaption> 
+							</figcaption>
 						</figure>
 					</div>
 
@@ -91,7 +91,7 @@ const Projects = () => {
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
-							</figcaption> 
+							</figcaption>
 						</figure>
 					</div>
 
@@ -106,14 +106,14 @@ const Projects = () => {
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
-							</figcaption> 
+							</figcaption>
 						</figure>
 					</div>
-					
+
 				</div>
 				<div className="row">
 					<div className="col-md-12">
-						<hr/>
+						<hr />
 						<div className="text-center">
 							<button onClick={showAllPastProjects} className="btn btn-primary">View Full Detailed List <span className="glyphicon glyphicon-new-window"></span></button>
 						</div>

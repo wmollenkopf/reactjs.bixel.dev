@@ -14,12 +14,12 @@ const Abilities = () => {
 				<div className="text-center project-referal">
 					<a href="https://github.com/wmollenkopf/react-resume" className="btn btn-primary" target="_blank" rel="noopener noreferrer">See this project on Github</a>
 				</div>
-			
-				<hr/>
+
+				<hr />
 
 				<h3>Languages</h3>
 
-				<div className="row">				
+				<div className="row">
 					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
@@ -55,7 +55,7 @@ const Abilities = () => {
 
 				<h3>Operating Systems</h3>
 
-				<div className="row">				
+				<div className="row">
 					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
@@ -89,7 +89,7 @@ const Abilities = () => {
 								</span>
 							</li>
 							<li>
-								<span className="ability-title">Mac (1 years)</span>
+								<span className="ability-title">Mac (1 year)</span>
 								<span className="ability-score">
 									<span className="glyphicon glyphicon-star filled"></span>
 									<span className="glyphicon glyphicon-star "></span>
@@ -140,7 +140,7 @@ const Abilities = () => {
 
 				<h3>Programming/Scripting</h3>
 
-				<div className="row">				
+				<div className="row">
 					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
@@ -259,7 +259,7 @@ const Abilities = () => {
 									<span className="glyphicon glyphicon-star filled"></span>
 								</span>
 							</li>
-							
+
 							<li>
 								<span className="ability-title">XML (5 years)</span>
 								<span className="ability-score">
@@ -337,7 +337,7 @@ const Abilities = () => {
 				<hr />
 				<h3>Databases</h3>
 
-				<div className="row">				
+				<div className="row">
 					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
@@ -407,12 +407,12 @@ const Abilities = () => {
 						<ul className="no-bullets">
 							<li>
 								<span className="ability-title">Bootstrap Framework (2 years)</span>
-								<span className="ability-score">							
+								<span className="ability-score">
 									<span className="glyphicon glyphicon-star filled"></span>
 									<span className="glyphicon glyphicon-star filled"></span>
 									<span className="glyphicon glyphicon-star filled"></span>
-									<span className="glyphicon glyphicon-star filled"></span>							
-									<span className="glyphicon glyphicon-star filled"></span>									
+									<span className="glyphicon glyphicon-star filled"></span>
+									<span className="glyphicon glyphicon-star filled"></span>
 								</span>
 							</li>
 							<li>
@@ -425,7 +425,7 @@ const Abilities = () => {
 									<span className="glyphicon glyphicon-star "></span>
 								</span>
 							</li>
-							
+
 							<li>
 								<span className="ability-title">MVC Pattern</span>
 								<span className="ability-score">
@@ -445,7 +445,7 @@ const Abilities = () => {
 									<span className="glyphicon glyphicon-star filled"></span>
 									<span className="glyphicon glyphicon-star "></span>
 								</span>
-							</li>	
+							</li>
 						</ul>
 					</div>
 					<div className="col-md-6">
@@ -502,9 +502,18 @@ const Abilities = () => {
 				<div className="row">
 					<div className="col-md-6">
 						<ul className="no-bullets">
-
 							<li>
-								<span className="ability-title">Sublime Text 3 (1 years) (Preferred)</span>
+								<span class="ability-title">Visual Studio Code (1 year)</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star "></span>
+								</span>
+							</li>
+							<li>
+								<span className="ability-title">Sublime Text 3 (1 year)</span>
 								<span className="ability-score">
 									<span className="glyphicon glyphicon-star filled"></span>
 									<span className="glyphicon glyphicon-star filled"></span>
@@ -620,7 +629,16 @@ const Abilities = () => {
 					</div>
 					<div className="col-md-6">
 						<ul className="no-bullets">
-							
+							<li>
+								<span class="ability-title">Atom (1 year)</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star "></span>
+									<span class="glyphicon glyphicon-star "></span>
+								</span>
+							</li>
 							<li>
 								<span className="ability-title">Visual Studio (10+ years)</span>
 								<span className="ability-score">
@@ -661,7 +679,7 @@ const Abilities = () => {
 									<span className="glyphicon glyphicon-star "></span>
 								</span>
 							</li>
-							
+
 							<li>
 								<span className="ability-title">MonoDevelop (2 years)</span>
 								<span className="ability-score">
@@ -722,7 +740,7 @@ const Abilities = () => {
 									<span className="glyphicon glyphicon-star filled"></span>
 								</span>
 							</li>
-							
+
 						</ul>
 					</div>
 				</div>

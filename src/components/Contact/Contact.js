@@ -17,14 +17,14 @@ const Contact = () => {
 	};
 
 	return (
-	    <div className="background-gray">
+		<div className="background-gray">
 			<div id="contact" className="container">
 				<h2>Contact</h2>
 				<blockquote className="blockquote lead">
-	  				<p className="mb-0">If I had asked people what they wanted, they would have said faster horses. &rdquo;</p>
-	  				<footer className="blockquote-footer ">Henry Ford</footer>
+					<p className="mb-0">If I had asked people what they wanted, they would have said faster horses. &rdquo;</p>
+					<footer className="blockquote-footer ">Henry Ford</footer>
 				</blockquote>
-				
+
 				<hr />
 
 				<div className="row">
@@ -44,7 +44,7 @@ const Contact = () => {
 									http://twitter.com/biridreisan
 								</a>
 							</li>
-							
+
 						</ul>
 					</div>
 					<div className="col-md-6">
@@ -63,7 +63,7 @@ const Contact = () => {
 							</li>
 						</ul>
 					</div>
-					
+
 				</div>
 
 				<hr />
@@ -74,7 +74,7 @@ const Contact = () => {
 				</div>
 
 			</div>
-			
+
 		</div>
 	)
 };
