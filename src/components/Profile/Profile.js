@@ -7,7 +7,7 @@ import DonateButton from '../PayPalDonateButton/PayPalDonateButton.js';
 const Profile = () => {
 	return (
 		<div className="background-snowwhite">
-			<div id="profile" className="container">
+			<div id="profile" className="profileContainer container">
 				<h2>Profile</h2>
 				<blockquote className="blockquote lead" >
 					<p className="mb-0">&ldquo;Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.&rdquo;</p>

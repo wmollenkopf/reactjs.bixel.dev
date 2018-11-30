@@ -5,7 +5,7 @@ import './Abilities.css';
 const Abilities = () => {
 	return (
 		<div className="background-snowwhite">
-			<div id="abilities" className="container">
+			<div id="abilities" className="abilitiesContainer container">
 				<h2>Abilities</h2>
 				<blockquote className="blockquote lead">
 					<p className="mb-0">&ldquo;Life without knowledge is death in disguise.&rdquo;</p>

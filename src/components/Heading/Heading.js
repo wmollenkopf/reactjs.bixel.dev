@@ -15,7 +15,7 @@ const Heading = ({ viewportHeight }) => {
 
 	return (
 		<div id="top" className="jumbotron jumboHeading" data-position="center right" style={{ "height": viewportHeight + 'px' }}>
-			<div className="container">
+			<div className="headingContainer container">
 				<h1>William Mollenkopf</h1>
 				<p className="lead">Programmer | Systems Administrator | 日本語の学生</p>
 			</div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Heading from './components/Heading/Heading.js';
-import Navbar from './components/Navbar/Navbar.js';
+import Navibar from './components/Navibar/Navibar.js';
 import Profile from './components/Profile/Profile.js';
 import Experiences from './components/Experiences/Experiences.js';
 import Abilities from './components/Abilities/Abilities.js';
@@ -75,6 +75,10 @@ class App extends Component {
     window.addEventListener('scroll', this.updateWindowScroll);
   }
 
+  makeIDActive = (elemID) => {
+    try{document.getElementById(elemID).classList.add("active");}
+    catch(e){console.log(e);}
+  }
   updateWindowScroll() {
     let currentBodyScroll = document.documentElement.scrollTop;
     if(currentBodyScroll > (document.getElementById("scroll-down").offsetTop+20)){
@@ -85,27 +89,30 @@ class App extends Component {
 
     // Below is what happens when it's late at night, +20 hours of coding, and you can't get scroll spy to work with ReactJS+Bootstrap
     // AND all the reactJS solutions are super case dependant...
+
+    
     if(currentBodyScroll <= this.state.profileOffsetOffset) {
       // Do nothing
     } else {
       // Remove the active from sections
       let sections = ['profile','experiences','abilities','cv','projects','contact'];
       for(let i = 0; i < sections.length; i++) {
-        document.getElementById(sections[i] + "Spy").classList.remove("active");
+        try{document.getElementById(sections[i] + "Spy").classList.remove("active");}
+        catch(e){console.log(e);}
       }
 
       if(currentBodyScroll > this.state.profileOffsetOffset && currentBodyScroll <= this.state.experiencesOffset) {
-        document.getElementById("profileSpy").classList.add("active");
+        this.makeIDActive("profileSpy");
       } else if(currentBodyScroll > this.state.experiencesOffset && currentBodyScroll <= this.state.abilitiesOffset) {
-        document.getElementById("experiencesSpy").classList.add("active");
+        this.makeIDActive("experiencesSpy");
       } else if(currentBodyScroll > this.state.abilitiesOffset && currentBodyScroll <= this.state.cvOffset) {
-        document.getElementById("abilitiesSpy").classList.add("active");
+        this.makeIDActive("abilitiesSpy");
       } else if(currentBodyScroll > this.state.cvOffset && currentBodyScroll <= this.state.projectsOffset) {
-        document.getElementById("cvSpy").classList.add("active");
+        this.makeIDActive("cvSpy");
       } else if(currentBodyScroll > this.state.projectsOffset && currentBodyScroll <= this.state.contactOffset) {
-        document.getElementById("projectsSpy").classList.add("active");
+        this.makeIDActive("projectsSpy");
       } else if(currentBodyScroll > this.state.contactOffset) {
-        document.getElementById("contactSpy").classList.add("active");
+        this.makeIDActive("contactSpy");
       }
     }
     
@@ -140,7 +147,7 @@ class App extends Component {
     return (
       <div className="App">
         <Heading viewportHeight={this.state.height}/>
-        <Navbar/>
+        <Navibar/>
         <Profile/>
         <Experiences/>
         <Abilities/>

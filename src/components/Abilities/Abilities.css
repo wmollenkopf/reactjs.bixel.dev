@@ -8,7 +8,7 @@ h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
 .background-snowwhite { background: #EBF1F3; }
-.container { max-width: 1280px; padding: 40px 180px; }
+.abilitiesContainer { max-width: 1280px; padding: 40px 180px; }
 hr { margin: 40px 0px; border-color: #58637d; opacity: 0.2; filter:alpha(opacity=20); }
 
 p.lead { text-align: center; color: #58637d; }
@@ -35,3 +35,7 @@ ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
 }
 #abilities ul > li .ability-score .glyphicon.filled { color: #326FBA; }
 #abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
+
+@media (max-width: 767px) { 
+	.abilitiesContainer { padding: 60px 20px; min-width: 280px; }
+}

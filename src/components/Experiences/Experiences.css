@@ -8,7 +8,7 @@ h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
 .background-snowblue { background: #DAE6F1; }
-.container { max-width: 1280px; padding: 40px 180px; }
+.experiencesContainer { max-width: 1280px; padding: 40px 180px; }
 hr { margin: 40px 0px; border-color: #58637d; opacity: 0.2; filter:alpha(opacity=20); }
 
 p.lead { text-align: center; color: #58637d; }
@@ -22,6 +22,7 @@ p.lead a:hover { text-decoration: none; }
 #experiences .experience .experience-details .seperator { color: #BCBCBC; }
 
 @media (max-width: 767px) { 
+	.experiencesContainer { padding: 60px 20px; min-width: 280px; }
 	#experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
 	#experiences .experience .experience-details .seperator { display: none; }
 }

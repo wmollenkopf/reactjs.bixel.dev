@@ -11,7 +11,7 @@
 		right: 20px;
 		top: 20px;		
 	}
-	.jumbotron .container { top: 20%; padding-top: 0px; }
+	.jumbotron .headingContainer { top: 20%; padding-top: 0px; }
 	.jumbotron .scroll-down { width: 100%; right: 0px; }
 }    
 
@@ -53,10 +53,10 @@
 	padding: 0px;
 }  
 
-.jumbotron .container { position: relative; top: 28%; z-index: 4; text-align: center; }
-.jumbotron .container > * { text-align: center; color: #FFFFFF; }
-.jumbotron .container h1 { padding-bottom: 20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; }
-.jumbotron .container .lead { font-size: 20px; }
+.jumbotron .headingContainer { position: relative; top: 28%; z-index: 4; text-align: center; }
+.jumbotron .headingContainer > * { text-align: center; color: #FFFFFF; }
+.jumbotron .headingContainer h1 { padding-bottom: 20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; }
+.jumbotron .headingContainer .lead { font-size: 20px; }
 .jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; border-top: 1px solid black; border-top: 1px solid black; border-top: 1px solid black; border-top-left-radius: 8px; border-top-right-radius: 8px;}
 .jumbotron .scroll-down .glyphicon { 
 	color: #FFF; 

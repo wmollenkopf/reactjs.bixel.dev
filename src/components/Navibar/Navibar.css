@@ -20,7 +20,7 @@
 .navbar-nav { margin: 0px; }
 .navbar .nav > li { display: block; float: none; height: 80px; } 
 .navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
-.navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #C8DBF2; }
+.navbar .nav > li a:hover, .navbar .nav > li a:focus { background: #00489F; color: #FFFFFF; }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #00489F; color: #FFFFFF; opacity: 0.75;  filter: alpha(opacity=75);}
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar { background: #222222; }

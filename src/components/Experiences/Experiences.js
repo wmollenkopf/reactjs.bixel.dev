@@ -6,7 +6,7 @@ const Experiences = () => {
 
 	return (
 		<div className="background-snowblue">
-			<div id="experiences" className="container">
+			<div id="experiences" className="experiencesContainer container">
 				<h2>Experiences</h2>
 				<blockquote className="blockquote lead">
 					<p className="mb-0">&ldquo;A happy life is one spent in learning, earning, and yearning.&rdquo;</p>

@@ -18,7 +18,7 @@ const Contact = () => {
 
 	return (
 		<div className="background-gray">
-			<div id="contact" className="container">
+			<div id="contact" className="contactContainer container">
 				<h2>Contact</h2>
 				<blockquote className="blockquote lead">
 					<p className="mb-0">If I had asked people what they wanted, they would have said faster horses. &rdquo;</p>
