@@ -503,13 +503,13 @@ const Abilities = () => {
 					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
-								<span class="ability-title">Visual Studio Code (1 year)</span>
-								<span class="ability-score">
-									<span class="glyphicon glyphicon-star filled"></span>
-									<span class="glyphicon glyphicon-star filled"></span>
-									<span class="glyphicon glyphicon-star filled"></span>
-									<span class="glyphicon glyphicon-star filled"></span>
-									<span class="glyphicon glyphicon-star "></span>
+								<span className="ability-title">Visual Studio Code (1 year)</span>
+								<span className="ability-score">
+									<span className="glyphicon glyphicon-star filled"></span>
+									<span className="glyphicon glyphicon-star filled"></span>
+									<span className="glyphicon glyphicon-star filled"></span>
+									<span className="glyphicon glyphicon-star filled"></span>
+									<span className="glyphicon glyphicon-star "></span>
 								</span>
 							</li>
 							<li>
@@ -630,13 +630,13 @@ const Abilities = () => {
 					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
-								<span class="ability-title">Atom (1 year)</span>
-								<span class="ability-score">
-									<span class="glyphicon glyphicon-star filled"></span>
-									<span class="glyphicon glyphicon-star filled"></span>
-									<span class="glyphicon glyphicon-star filled"></span>
-									<span class="glyphicon glyphicon-star "></span>
-									<span class="glyphicon glyphicon-star "></span>
+								<span className="ability-title">Atom (1 year)</span>
+								<span className="ability-score">
+									<span className="glyphicon glyphicon-star filled"></span>
+									<span className="glyphicon glyphicon-star filled"></span>
+									<span className="glyphicon glyphicon-star filled"></span>
+									<span className="glyphicon glyphicon-star "></span>
+									<span className="glyphicon glyphicon-star "></span>
 								</span>
 							</li>
 							<li>
