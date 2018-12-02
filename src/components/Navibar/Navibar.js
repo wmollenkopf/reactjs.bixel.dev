@@ -56,8 +56,12 @@ class Navibar extends Component {
 	// };
 
 	componentDidMount() {
-		let navbarParent = document.getElementById('navbar-example').childNodes;
-		navbarParent[0].classList.remove("container"); // ugly hack to remove reactjs-bootstrap forced container div that just destroys my CSS
+		// ugly hack to remove reactjs-bootstrap forced container div that just destroys my CSS layout
+		let navbarParent = document.getElementById('navbar-example');
+		if(navbarParent!==null) {
+			navbarParent.childNodes[0].classList.remove("container"); 
+		}
+		
 	}
 
 	render() {
