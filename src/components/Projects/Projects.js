@@ -5,6 +5,9 @@ import enspectorproImage from './images/enspectorpro.com.png';
 import blogBiriMeImage from './images/blog.biri.me.png';
 import scpFsecUcfEduImage from './images/scp.fsec.ucf.edu.png';
 import secureSolarRatingImage from './images/secure.solar-rating.org.png';
+import fcardsImage from './images/fcards.biri.me.png';
+import biriMeImage from './images/biri.me.png';
+import hiraganaHunterImage from './images/hiraganahunter.png';
 import { Modal,Button} from 'react-bootstrap';
 
 
@@ -50,12 +53,27 @@ class Projects extends Component {
 				<div className="row">
 					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
-							<img src={gitHubAiFacialRecImage} alt="AI Facial Recognition" />
+							<img src={biriMeImage} alt="Biri.me" />
 							<figcaption>
-								<h3>AI Facial Recognition</h3>
-								<p>Personal ReactJS project that uses an AI API to detect faces in images via URL.</p>
-								<p><strong>Tags:</strong> <br /> AI, ReactJS</p>
-								<a href="https://wmollenkopf.github.io/ai-facial-recognition" target="_blank" rel="noopener noreferrer noreferrer">View more</a>
+								<h3>Biri.me (This)</h3>
+								<p>Personal Webpage re-written in ReactJS</p>
+								<p><strong>Tags:</strong> <br /> ReactJS, NodeJS, JavaScript</p>
+								<a href="https://www.biri.me" target="_blank" rel="noopener noreferrer">View more</a>
+								<span className="icon">
+									<span className="glyphicon glyphicon-new-window"></span>
+								</span>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div className="col-md-6 col-sm-12 col-xs-12">
+						<figure className="effect">
+							<img src={blogBiriMeImage} alt="Biri.me Blog" />
+							<figcaption>
+								<h3>Biri.me Blog</h3>
+								<p>Personal blog for storing notes related to IT, Japanese studies, etc.</p>
+								<p><strong>Tags:</strong> <br />Configuration, Guides, Documentation, Notes</p>
+								<a href="https://blog.biri.me" target="_blank" rel="noopener noreferrer">View more</a>
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
@@ -70,22 +88,7 @@ class Projects extends Component {
 								<h3>EnspectorPro</h3>
 								<p>EnspectorPro, helping building testers work more easily with building officials.</p>
 								<p><strong>Tags:</strong> <br />Design, Development, PHP, Bootstrap, Fullstack</p>
-								<a href="https://enspectorpro.com" target="_blank" rel="noopener noreferrer noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={blogBiriMeImage} alt="Biri.me Blog" />
-							<figcaption>
-								<h3>WordPress Blog</h3>
-								<p>Personal blog for storing notes related to IT, Japanese studies, etc.</p>
-								<p><strong>Tags:</strong> <br />Configuration, Guides, Documentation, Notes</p>
-								<a href="https://blog.biri.me" target="_blank" rel="noopener noreferrer noreferrer">View more</a>
+								<a href="https://enspectorpro.com" target="_blank" rel="noopener noreferrer">View more</a>
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
@@ -100,7 +103,7 @@ class Projects extends Component {
 								<h3>Photovoltaic Certification Portal</h3>
 								<p>SCP, certifying solar panels in Florida, USA.</p>
 								<p><strong>Tags:</strong> <br />Serverside Development, VB.net</p>
-								<a href="https://scp.fsec.ucf.edu" target="_blank" rel="noopener noreferrer noreferrer">View more</a>
+								<a href="https://scp.fsec.ucf.edu" target="_blank" rel="noopener noreferrer">View more</a>
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
@@ -115,7 +118,7 @@ class Projects extends Component {
 								<h3>Solar Rating & Certfication Corp.</h3>
 								<p>Site used for certifying PV Modules & Systems throughout the US.</p>
 								<p><strong>Tags:</strong> <br />Serverside Development, VB.net</p>
-								<a href="https://secure.solar-rating.org" target="_blank" rel="noopener noreferrer noreferrer">View more</a>
+								<a href="https://secure.solar-rating.org" target="_blank" rel="noopener noreferrer">View more</a>
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
@@ -123,6 +126,50 @@ class Projects extends Component {
 						</figure>
 					</div>
 
+					<div className="col-md-6 col-sm-12 col-xs-12">
+						<figure className="effect">
+							<img src={fcardsImage} alt="AI Facial Recognition" />
+							<figcaption>
+								<h3>Flash Cards</h3>
+								<p>Personal ReactJS Flash Cards project that has a RESTful backend.</p>
+								<p><strong>Tags:</strong> <br /> REST, ReactJS, API, NodeJS</p>
+								<a href="https://fcards.biri.me" target="_blank" rel="noopener noreferrer">View more</a>
+								<span className="icon">
+									<span className="glyphicon glyphicon-new-window"></span>
+								</span>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div className="col-md-6 col-sm-12 col-xs-12">
+						<figure className="effect">
+							<img src={gitHubAiFacialRecImage} alt="AI Facial Recognition" />
+							<figcaption>
+								<h3>AI Facial Recognition</h3>
+								<p>Personal ReactJS project that uses an AI API to detect faces in images via URL.</p>
+								<p><strong>Tags:</strong> <br /> AI, ReactJS</p>
+								<a href="https://wmollenkopf.github.io/ai-facial-recognition" target="_blank" rel="noopener noreferrer">View more</a>
+								<span className="icon">
+									<span className="glyphicon glyphicon-new-window"></span>
+								</span>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div className="col-md-6 col-sm-12 col-xs-12">
+						<figure className="effect">
+							<img src={hiraganaHunterImage} alt="Hiragana Hunter" />
+							<figcaption>
+								<h3>Hiragana Hunter</h3>
+								<p>A final game Project for UCF Game AI course.</p>
+								<p><strong>Tags:</strong> <br /> Unity3D, C#, AI</p>
+								<a href="https://www.biri.me/hh" target="_blank" rel="noopener noreferrer">View more</a>
+								<span className="icon">
+									<span className="glyphicon glyphicon-new-window"></span>
+								</span>
+							</figcaption>
+						</figure>
+					</div>
 				</div>
 				<div className="row">
 					<div className="col-md-12">

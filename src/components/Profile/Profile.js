@@ -26,7 +26,7 @@ const Profile = ({backgroundClass="background-snowwhite"}) => {
 					</div>
 					<div className="col-md-4">
 					<h3>Hobbies</h3>
-					<p>My hobbies include playing video games, learning a foreign language, dabbling in game development, traveling around the world with my wife and reading fictional and educational novels.</p>
+					<p>My hobbies include playing video games, learning a foreign language, dabbling in game development, traveling around the world with my wife and reading fictional and educational books.</p>
 					</div>
 				</div>
 			</div>

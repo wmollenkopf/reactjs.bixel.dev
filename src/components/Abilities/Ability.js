@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const Ability = ({ability,key}) => {
+const Ability = ({ability}) => {
     return (<li>
-			    <span key={key} className="ability-title">{ability}</span>
+			    <span className="ability-title">{ability}</span>
 			</li>
     );
 }
