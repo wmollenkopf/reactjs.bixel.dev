@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 
-const Contact = () => {
+const Contact = ({backgroundClass="background-gray"}) => {
 	const reverseEmail = {
 		'unicodeBidi': 'bidi-override',
 		'direction': 'rtl',
@@ -17,7 +17,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="background-gray">
+		<div className={backgroundClass}>
 			<div id="contact" className="contactContainer container">
 				<h2>Contact</h2>
 				<blockquote className="blockquote lead">
@@ -31,17 +31,15 @@ const Contact = () => {
 					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
-								<a href="mailto:em.irib@irib" onClick={mailClick}>
-									<span className="icon icon-email"></span>
-									<span style={reverseEmail}>
-										em.irib@irib
-									</span>
+								<a href="http://github.com/wmollenkopf" target="_blank" rel="noopener noreferrer">
+									<span className="icon icon-git"></span>
+									http://github.com/wmollenkopf
 								</a>
 							</li>
 							<li>
-								<a href="https://twitter.com/biridreisan" target="_blank" rel="noopener noreferrer">
-									<span className="icon icon-twitter"></span>
-									http://twitter.com/biridreisan
+								<a href="https://twitch.com/biribixel" target="_blank" rel="noopener noreferrer">
+									<span className="icon icon-twitch"></span>
+									https://twitch.com/biribixel
 								</a>
 							</li>
 
@@ -56,23 +54,16 @@ const Contact = () => {
 								</a>
 							</li>
 							<li>
-								<a href="http://github.com/wmollenkopf" target="_blank" rel="noopener noreferrer">
-									<span className="icon icon-git"></span>
-									http://github.com/wmollenkopf
+								<a href="mailto:em.irib@irib" onClick={mailClick}>
+									<span className="icon icon-email"></span>
+									<span style={reverseEmail}>
+										em.irib@irib
+									</span>
 								</a>
 							</li>
 						</ul>
 					</div>
-
 				</div>
-
-				<hr />
-				<div className="text-center">
-					<a className="github-button" href="https://github.com/wmollenkopf" aria-label="Follow @wmollenkopf on GitHub">Follow @wmollenkopf</a>
-
-					<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-url="http://www.biri.me" data-related="biridreisan" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js"></script>
-				</div>
-
 			</div>
 
 		</div>

@@ -1,12 +1,12 @@
 import React from 'react';
 import './Profile.css';
 import profileImage from './images/william_mollenkopf.jpg';
-import { Follow } from 'react-twitter-widgets';
-import DonateButton from '../PayPalDonateButton/PayPalDonateButton.js';
+// import { Follow } from 'react-twitter-widgets';
+// import DonateButton from '../PayPalDonateButton/PayPalDonateButton.js';
 
-const Profile = () => {
+const Profile = ({backgroundClass="background-snowwhite"}) => {
 	return (
-		<div className="background-snowwhite">
+		<div className={backgroundClass}>
 			<div id="profile" className="profileContainer container">
 				<h2>Profile</h2>
 				<blockquote className="blockquote lead" >
@@ -17,39 +17,17 @@ const Profile = () => {
 				<div className="row">
 					<div className="col-md-4">
 						<h3>About me</h3>
-						<p>
-							I'm a hard-working programmer with over 10 years experience developing, testing, and maintaining enterprise software applications.
-							Either on my own or within a team, I'm capable of completing tasks within any part of the technical stack.
-						</p>
+						<p>I consider myself a very hard-working Developer and Systems Administrator with many years of experience working on various websites and applications.</p>
+                    	<p>I love studying and improving myself each day through practice and online courses.</p>
+
 					</div>
 					<div className="col-md-4 text-center">
 						<img className="profileImage" src={profileImage} alt="William Mollenkopf" />
 					</div>
 					<div className="col-md-4">
-						<h3>Details</h3>
-						<p>
-							<strong>Name:</strong><br />
-							William Mollenkopf III<br />
-							<strong>Age:</strong><br />
-							34 years<br />
-							<strong>Location:</strong><br />
-							Florida, United States of America
-						</p>
-						<Follow username='BiriDreisan'
-							options={{
-								showCount: 'false',
-								dnt: 'true',
-								size: 'large',
-								showScreenName: 'false',
-							}}
-						/>
+					<h3>Hobbies</h3>
+					<p>My hobbies include playing video games, learning a foreign language, dabbling in game development, traveling around the world with my wife and reading fictional and educational novels.</p>
 					</div>
-				</div>
-
-				<div className="text-center">
-					<p>Got inspired? Copied the theme? Or do you just like the website?<br />
-						No problem, just buy me some coffee to help keep me going!</p>
-					<DonateButton amount="5" />
 				</div>
 			</div>
 		</div>
