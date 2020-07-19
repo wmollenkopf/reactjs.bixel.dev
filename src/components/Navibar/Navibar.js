@@ -80,7 +80,7 @@ class Navibar extends Component {
 				<Navbar.Collapse>
 					<Nav>
 						<NavItem eventKey={1} id="profileSpy" href="#profile" onClick={this.handleClick}>Profile</NavItem>
-						<NavItem eventKey={2} id="experiencesSpy" href="#experiences" onClick={this.handleClick}>Experiences</NavItem>
+						{/* <NavItem eventKey={2} id="experiencesSpy" href="#experiences" onClick={this.handleClick}>Experiences</NavItem> */}
 						<NavItem eventKey={3} id="abilitiesSpy" href="#abilities" onClick={this.handleClick}>Abilities</NavItem>
 						<NavItem eventKey={4} id="projectsSpy" href="#projects" onClick={this.handleClick}>Projects</NavItem>
 						<NavItem eventKey={5} id="contactSpy" href="#contact" onClick={this.handleClick}>Contact</NavItem>

@@ -31,9 +31,9 @@ const Contact = ({backgroundClass="background-gray"}) => {
 					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
-								<a href="http://github.com/wmollenkopf" target="_blank" rel="noopener noreferrer">
+								<a href="https://github.com/wmollenkopf" target="_blank" rel="noopener noreferrer">
 									<span className="icon icon-git"></span>
-									http://github.com/wmollenkopf
+									https://github.com/wmollenkopf
 								</a>
 							</li>
 							<li>
