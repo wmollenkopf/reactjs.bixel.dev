@@ -26,6 +26,7 @@ hr { margin: 40px 0px; border-color: #58637d; opacity: 0.2; filter:alpha(opacity
 .icon.icon-skype { background-position: 0px -64px; }
 .icon.icon-email { background-position: 0px -96px; }
 .icon.icon-git { background-position: 0px -128px; }
+.icon.icon-twitch { background-position: 0px -160px; }
 
 #contact .lead { text-align: center; color: #727878; }
 #contact { padding-bottom: 200px; }
