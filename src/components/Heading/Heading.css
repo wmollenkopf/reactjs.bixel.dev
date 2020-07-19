@@ -162,3 +162,12 @@ figure.effect:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+
+.wfm3image {
+	vertical-align: middle;
+background-image: url("./images/wm3-250.png");
+height: 250px; /* required */
+background-position: center; 
+background-repeat: no-repeat;
+}
