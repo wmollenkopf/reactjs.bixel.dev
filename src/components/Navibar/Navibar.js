@@ -62,8 +62,14 @@ class Navibar extends Component {
 			navbarParent.childNodes[0].classList.remove("container"); 
 		}
 		
+		
 	}
 
+	// applyScrollSpy() {
+	// 	$('#navbar-example').on('activate.bs.scrollspy', function() {
+	// 		window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
+	// 	});
+	// }
 	render() {
 		
 	// const handleSelect = (selectedKey) => {
