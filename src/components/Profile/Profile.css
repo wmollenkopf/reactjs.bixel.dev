@@ -19,7 +19,7 @@ p.lead a:hover { text-decoration: none; }
 .btn-primary {border-color: #326FBA; }
 .btn-primary:hover {border-color: #326FBA; }
 
-.profileImage {width: 250px; height: 250px; border-radius: 50%; border: 3px solid #6C6F7C;}
+.profileImage {border-radius: 50%; border: 3px solid #6C6F7C;}
 #profile .row > div { margin-bottom: 20px; }
 #profile .row > div img { width: 100%; max-width: 246px; height: auto; }
 
