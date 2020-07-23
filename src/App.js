@@ -95,16 +95,22 @@ class App extends Component {
       // Do nothing
     } else {
       // Remove the active from sections
-      let sections = ['profile','experiences','abilities','cv','projects','contact'];
+      let sections = ['profile',
+      // 'experiences',
+      'abilities','cv','projects','contact'];
       for(let i = 0; i < sections.length; i++) {
         try{document.getElementById(sections[i] + "Spy").classList.remove("active");}
-        catch(e){console.log(e);}
+        catch(e){
+          // console.log(sections[i] + "Spy");
+          // console.log(document.getElementById(sections[i] + "Spy"));
+          console.log(e);
+        }
       }
 
       if(currentBodyScroll > this.state.profileOffsetOffset && currentBodyScroll <= this.state.experiencesOffset) {
         this.makeIDActive("profileSpy");
-      } else if(currentBodyScroll > this.state.experiencesOffset && currentBodyScroll <= this.state.abilitiesOffset) {
-        this.makeIDActive("experiencesSpy");
+      // } else if(currentBodyScroll > this.state.experiencesOffset && currentBodyScroll <= this.state.abilitiesOffset) {
+      //   this.makeIDActive("experiencesSpy");
       } else if(currentBodyScroll > this.state.abilitiesOffset && currentBodyScroll <= this.state.cvOffset) {
         this.makeIDActive("abilitiesSpy");
       } else if(currentBodyScroll > this.state.cvOffset && currentBodyScroll <= this.state.projectsOffset) {
