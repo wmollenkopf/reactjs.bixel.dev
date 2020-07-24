@@ -186,10 +186,10 @@ class Projects extends Component {
 		aria-labelledby="contained-modal-title-lg"
 		show={this.state.show} onHide={this.handleClose}>
 				<Modal.Header closeButton>
-					<Modal.Title id="contained-modal-title-lg"  style={{ 'text-align': 'center' }}><h3>Past &amp; Current Projects</h3></Modal.Title>
+					<Modal.Title id="contained-modal-title-lg"  style={{ 'textAlign': 'center' }}>Past &amp; Current Projects</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					<div style={{ 'text-align': 'left' }}>
+					<div style={{ 'textAlign': 'left' }}>
 					<ul>
 						<li><span className="projYear">2008:</span> E-Mail Server Archiving software</li>
 						<li><span className="projYear">2009:</span> CR1000 Dynamic TCP CRBasic Datalogger Configuration Tutorial
@@ -560,7 +560,7 @@ class Projects extends Component {
                     }	
 					</ul> */}
 				</Modal.Body>
-				<Modal.Footer style={{ 'text-align': 'center' }}>
+				<Modal.Footer style={{ 'textAlign': 'center' }}>
 					<Button onClick={this.handleClose}>Close</Button>
 				</Modal.Footer>
 			</Modal>
