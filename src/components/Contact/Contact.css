@@ -8,7 +8,7 @@ h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
 .background-gray { background: #434242; }
-.contactContainer { max-width: 1280px; padding: 40px; }
+.contactContainer { max-width: 1280px; padding: 40px 180px; }
 
 p.lead { text-align: center; color: #58637d; }
 p.lead a { color: #FFFFFF; text-decoration: underline; }
