@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 
-const Contact = ({ backgroundClass = "background-gray" }) => {
+const Contact = ({backgroundClass="background-gray"}) => {
 	const reverseEmail = {
 		'unicodeBidi': 'bidi-override',
 		'direction': 'rtl',
@@ -28,7 +28,7 @@ const Contact = ({ backgroundClass = "background-gray" }) => {
 				<hr />
 
 				<div className="row">
-					<div className="col-md-4">
+					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
 								<a href="https://github.com/wmollenkopf" target="_blank" rel="noopener noreferrer">
@@ -36,10 +36,16 @@ const Contact = ({ backgroundClass = "background-gray" }) => {
 									https://github.com/wmollenkopf
 								</a>
 							</li>
+							<li>
+								<a href="https://twitch.com/biribixel" target="_blank" rel="noopener noreferrer">
+									<span className="icon icon-twitch"></span>
+									https://twitch.com/biribixel
+								</a>
+							</li>
+
 						</ul>
 					</div>
-
-					<div className="col-md-4">
+					<div className="col-md-6">
 						<ul className="no-bullets">
 							<li>
 								<a href="https://linkedin.com/in/wmollenkopf" target="_blank" rel="noopener noreferrer">
@@ -47,11 +53,6 @@ const Contact = ({ backgroundClass = "background-gray" }) => {
 									http://linkedin.com/in/wmollenkopf
 								</a>
 							</li>
-						</ul>
-					</div>
-
-					<div className="col-md-4">
-						<ul className="no-bullets">
 							<li>
 								<a href="mailto:em.irib@irib" onClick={mailClick}>
 									<span className="icon icon-email"></span>

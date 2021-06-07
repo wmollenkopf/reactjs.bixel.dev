@@ -41,7 +41,7 @@ class Projects extends Component {
 	return (
 		<div className={this.props.backgroundClass}>
 			<div id="cv" className="cvContainer"></div>
-			<div id="projects" className="projectsContainer ">
+			<div id="projects" className="projectsContainer container">
 				<h2>Projects</h2>
 				<blockquote className="blockquote lead">
 					<p className="mb-0">&ldquo;You can do anything you set your mind to.&rdquo;</p>
@@ -51,7 +51,7 @@ class Projects extends Component {
 				<hr />
 
 				<div className="row">
-					<div className="col-md-4 col-sm-12 col-xs-12">
+					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
 							<img src={biriMeImage} alt="Biri.me" />
 							<figcaption>
@@ -66,7 +66,7 @@ class Projects extends Component {
 						</figure>
 					</div>
 
-					<div className="col-md-4 col-sm-12 col-xs-12">
+					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
 							<img src={blogBiriMeImage} alt="Biri.me Blog" />
 							<figcaption>
@@ -81,7 +81,7 @@ class Projects extends Component {
 						</figure>
 					</div>
 
-					<div className="col-md-4 col-sm-12 col-xs-12">
+					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
 							<img src={enspectorproImage} alt="EnspectorPro" />
 							<figcaption>
@@ -96,7 +96,7 @@ class Projects extends Component {
 						</figure>
 					</div>
 
-					<div className="col-md-4 col-sm-12 col-xs-12">
+					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
 							<img src={scpFsecUcfEduImage} alt="FSEC Solar Photovoltaic Portal" />
 							<figcaption>
@@ -111,7 +111,7 @@ class Projects extends Component {
 						</figure>
 					</div>
 
-					<div className="col-md-4 col-sm-12 col-xs-12">
+					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
 							<img src={secureSolarRatingImage} alt="FSEC Solar Photovoltaic Portal" />
 							<figcaption>
@@ -126,7 +126,7 @@ class Projects extends Component {
 						</figure>
 					</div>
 
-					<div className="col-md-4 col-sm-12 col-xs-12">
+					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
 							<img src={fcardsImage} alt="AI Facial Recognition" />
 							<figcaption>
@@ -141,7 +141,7 @@ class Projects extends Component {
 						</figure>
 					</div>
 
-					<div className="col-md-4 col-sm-12 col-xs-12">
+					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
 							<img src={gitHubAiFacialRecImage} alt="AI Facial Recognition" />
 							<figcaption>
@@ -156,7 +156,7 @@ class Projects extends Component {
 						</figure>
 					</div>
 
-					<div className="col-md-4 col-sm-12 col-xs-12">
+					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
 							<img src={hiraganaHunterImage} alt="Hiragana Hunter" />
 							<figcaption>
