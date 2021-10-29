@@ -1,18 +1,22 @@
 import React from 'react';
 import './Contact.css';
+import { IoIosMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 
 const Contact = ({backgroundClass="background-gray"}) => {
-	const reverseEmail = {
-		'unicodeBidi': 'bidi-override',
-		'direction': 'rtl',
-	}
+	// const reverseEmail = {
+	//  // Reverse displayed text to display email properly
+	// 	'unicodeBidi': 'bidi-override',
+	// 	'direction': 'rtl',
+	// }
 
 	const mailClick = (e) => {
+		// help prevent email scraping, even the JS code cannot be trusted...
 		e.preventDefault();
-		let emailAddress = e.target.innerText;
+		let emailAddress = 'ved.lexib@irib';
 		emailAddress = emailAddress.split('').reverse().join('');
 		let realURL = 'mailto:' + emailAddress;
 		window.location = realURL;
+		//console.log(realURL);
 		return false;
 	};
 
@@ -27,45 +31,19 @@ const Contact = ({backgroundClass="background-gray"}) => {
 
 				<hr />
 
-				<div className="row">
-					<div className="col-md-6">
-						<ul className="no-bullets">
-							<li>
-								<a href="https://github.com/wmollenkopf" target="_blank" rel="noopener noreferrer">
-									<span className="icon icon-git"></span>
-									https://github.com/wmollenkopf
-								</a>
-							</li>
-							<li>
-								<a href="https://twitch.com/biribixel" target="_blank" rel="noopener noreferrer">
-									<span className="icon icon-twitch"></span>
-									https://twitch.com/biribixel
-								</a>
-							</li>
-
-						</ul>
-					</div>
-					<div className="col-md-6">
-						<ul className="no-bullets">
-							<li>
-								<a href="https://linkedin.com/in/wmollenkopf" target="_blank" rel="noopener noreferrer">
-									<span className="icon icon-linkedin"></span>
-									http://linkedin.com/in/wmollenkopf
-								</a>
-							</li>
-							<li>
-								<a href="mailto:em.irib@irib" onClick={mailClick}>
-									<span className="icon icon-email"></span>
-									<span style={reverseEmail}>
-										em.irib@irib
-									</span>
-								</a>
-							</li>
-						</ul>
-					</div>
+				<div className="contactLinks">
+					<a href="https://github.com/wmollenkopf" target="_blank" rel="noopener noreferrer">
+							<IoLogoGithub/>
+						</a>
+						<a href="https://linkedin.com/in/wmollenkopf" target="_blank" rel="noopener noreferrer">
+							<IoLogoLinkedin/>
+						</a>
+						<a href="mailto:ved.lexib@irib" onClick={mailClick}>
+							<IoIosMail/>
+						</a>
 				</div>
-			</div>
 
+			</div>
 		</div>
 	)
 };

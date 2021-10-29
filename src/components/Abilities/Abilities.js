@@ -20,7 +20,7 @@ const Abilities = ({backgroundClass}) => {
 					<footer className="blockquote-footer ">Talib Kweli</footer>
 				</blockquote>
 				<div className="text-center project-referal">
-					<a href="https://github.com/wmollenkopf/reactjs.biri.me" className="btn btn-primary" target="_blank" rel="noopener noreferrer">See this project on Github</a>
+					<a href="https://github.com/wmollenkopf/reactjs.bixel.dev" className="btn btn-primary" target="_blank" rel="noopener noreferrer">See this project on Github</a>
 				</div>
 				<hr />
 
