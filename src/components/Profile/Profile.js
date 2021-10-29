@@ -1,8 +1,14 @@
 import React from 'react';
 import './Profile.css';
-import profileImage from './images/william_mollenkopf.jpg';
+
 // import { Follow } from 'react-twitter-widgets';
 // import DonateButton from '../PayPalDonateButton/PayPalDonateButton.js';
+import profileImage1 from './images/william_mollenkopf1.jpg';
+import profileImage2 from './images/william_mollenkopf2.jpg';
+
+const min = 1;
+const max = 2;
+const rand = min + Math.round(Math.random())*(max-min);
 
 const Profile = ({backgroundClass="background-snowwhite"}) => {
 	return (
@@ -22,7 +28,7 @@ const Profile = ({backgroundClass="background-snowwhite"}) => {
 
 					</div>
 					<div className="col-md-4 text-center">
-						<img className="profileImage" src={profileImage} alt="William Mollenkopf" />
+						<img className="profileImage" src={(rand>1)?profileImage2:profileImage1} alt="William Mollenkopf" />
 					</div>
 					<div className="col-md-4">
 					<h3>Hobbies</h3>

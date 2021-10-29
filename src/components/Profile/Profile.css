@@ -7,63 +7,23 @@ h2,h3 { font-weight: 300; color: #151949; }
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
-.background-snowblue { background: #DAE6F1; }
-.projectsContainer { max-width: 1280px; padding: 40px 180px; }
-.cvContainer { padding: 0px; margin: 0px; width: 0px; height: 0px; }
+.background-snowwhite { background: #EBF1F3; }
+.profileContainer { max-width: 1280px; padding: 40px 180px; }
 hr { margin: 40px 0px; border-color: #58637d; opacity: 0.2; filter:alpha(opacity=20); }
 
 p.lead { text-align: center; color: #58637d; }
 p.lead a { color: #FFFFFF; text-decoration: underline; }
 p.lead a:hover { text-decoration: none; }
 
+
 .btn-primary {border-color: #326FBA; }
 .btn-primary:hover {border-color: #326FBA; }
 
-.projYear {font-weight: bold;}
-
-#projects .row > div { margin-bottom: 30px; }
-#projects figure { position: relative; overflow: hidden; }
-#projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
-#projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
-#projects figure img { width: 110%; }
-#projects figure figcaption {
-    padding: 20px 30px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-}
-#projects figure a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-}
-#projects figure .icon { 
-	background: #00489F;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 48px;
-	height: 48px;
-}
-#projects figure .icon span {
-	font-size: 18px;
-	line-height: 18px;
-	padding: 15px;
-}
-
-.projYear {font-weight: bold;}
+.profileImage {border-radius: 50%; border: 3px solid #6C6F7C;}
+#profile .row > div { margin-bottom: 20px; }
+#profile .row > div img { width: 100%; max-width: 246px; height: auto; }
 
 @media (max-width: 767px) { 
-	.projectsContainer { padding: 60px 20px; min-width: 280px; }
+	.profileContainer { padding: 60px 20px; min-width: 280px; }
 	#profile .row * { text-align: center; }
-	.hidden-phone { display: none; }
 }  

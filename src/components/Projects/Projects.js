@@ -6,7 +6,7 @@ import blogBiriMeImage from './images/blog.biri.me.png';
 import scpFsecUcfEduImage from './images/scp.fsec.ucf.edu.png';
 import secureSolarRatingImage from './images/secure.solar-rating.org.png';
 import fcardsImage from './images/fcards.biri.me.png';
-import biriMeImage from './images/biri.me.png';
+import bixelDevImage from './images/bixel.dev.png';
 import hiraganaHunterImage from './images/hiraganahunter.png';
 import { Modal,Button} from 'react-bootstrap';
 
@@ -53,12 +53,12 @@ class Projects extends Component {
 				<div className="row">
 					<div className="col-md-6 col-sm-12 col-xs-12">
 						<figure className="effect">
-							<img src={biriMeImage} alt="Biri.me" />
+							<img src={bixelDevImage} alt="Bixel.dev" />
 							<figcaption>
-								<h3>Biri.me (This)</h3>
+								<h3>Bixel.dev (This)</h3>
 								<p>Personal Webpage re-written in ReactJS</p>
 								<p><strong>Tags:</strong> <br /> ReactJS, NodeJS, JavaScript</p>
-								<a href="https://www.biri.me" target="_blank" rel="noopener noreferrer">View more</a>
+								<a href="https://www.bixel.dev" target="_blank" rel="noopener noreferrer">View more</a>
 								<span className="icon">
 									<span className="glyphicon glyphicon-new-window"></span>
 								</span>
@@ -517,7 +517,17 @@ class Projects extends Component {
 							<li><span className="projYear">2019:</span> Installing a fallback HPe OnBoard Administrator</li>
 							<li><span className="projYear">2019:</span> Updating firmware for OnBoard Administrators</li>
 							<li><span className="projYear">2019:</span> Updating HPe Virtual Connect</li>
+							<li><span className="projYear">2019:</span> Updating HPe Virtual Connect</li>
+							<li><span className="projYear">2018-2019:</span> Migrating Windows 7 PCs to Windows 10 PCs</li>
+							<li><span className="projYear">2020:</span> Upgraded HPE OpenVMS to VSI OpenVMS</li>
+							<li><span className="projYear">2021:</span> Upgraded OpenVMS Samba CIFS v1 to OpenVMS Samba v4</li>
+							
+						</ul>
 
+						<h4 style={{textAlign:"center",marginTop:"15px"}}>Ongoing Projects</h4>
+						<hr style={{textAlign:"center",margin:"15px"}} />
+						
+						<ul>
 							<li><span className="projYear">2018-Present:</span> System Administration: Documentation
 								<ul className="hidden-phone">
 									<li>Documenting the batch jobs that run on a regular basis.</li>
@@ -535,9 +545,9 @@ class Projects extends Component {
 							<li><span className="projYear">2018-Present:</span> Installing and Managing ESXi Host Blade Servers</li>
 							<li><span className="projYear">2018-Present:</span> Managing VDP Backups</li>
 							<li><span className="projYear">2018-Present:</span> Updating ESXi Hypervisor servers with firmware, drivers and patches</li>
-							<li><span className="projYear">2018-Present:</span> Migrating Windows 7 PCs to Windows 10 PCs</li>
 							<li><span className="projYear">2018-Present:</span> Managing system batch job queues on OpenVMS Cluster</li>
 							<li><span className="projYear">2018-Present:</span> Performing OpenVMS username changes affecting services such as e-mail, shares, website logins, etc.</li>
+							<li><span className="projYear">2018-Present:</span> Performing Tape Restores and Tape Restore Testing</li>
 							<li><span className="projYear">2010-Present:</span> Resolving Nessus SIRT Responses Each Month
 								<ul className="hidden-phone">
 									<li>Go through a report each month to resolve any lingering security issues we may have with our network or servers.</li>
