@@ -7,6 +7,7 @@ h2,h3 { font-weight: 300; color: #151949; }
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
+.hidden {display: none;}
 .background-snowblue { background: #DAE6F1; }
 .projectsContainer {padding: 40px 180px; }
 .cvContainer { padding: 0px; margin: 0px; width: 0px; height: 0px; }
