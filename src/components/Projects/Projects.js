@@ -8,8 +8,20 @@ import secureSolarRatingImage from './images/secure.solar-rating.org.png';
 import fcardsImage from './images/fcards.biri.me.png';
 import bixelDevImage from './images/bixel.dev.png';
 import hiraganaHunterImage from './images/hiraganahunter.png';
+import systemAdminImage from './images/sysadminDefault.png';
+import tapeBackupImage from './images/tapebackup.jpg';
+import openVMSImage from './images/openvms.png';
+import sambaCIFSImage from './images/sambacifs.png';
+import desktopSupportImage from './images/desktopSupport.png';
+import binddnsImage from './images/binddns.png';
+import eghersImage from './images/eghersLogo.png';
+import processSoftwareImage from './images/processSoftware.png';
+import vmwareImage from './images/vmware.png';
+import svnImage from './images/svn.jpg';
+import dataScienceImage from './images/dataScience.png';
+import nessusImage from './images/nessus.png';
 import { Modal,Button} from 'react-bootstrap';
-
+import Project from './Project';
 
 class Projects extends Component {
 	constructor(props, context) {
@@ -32,6 +44,243 @@ class Projects extends Component {
 	}
 
 	render() {
+		//{title,image,description,tags,url}
+		const onGoingThisYear = new Date().getFullYear();
+		const projectsList = [];
+		projectsList.push(
+				{"startYear":"2018",
+				"endYear":"2021",
+				"title":"Bixel.dev (This)",
+				"image":bixelDevImage,
+				"description":"Personal Webpage re-written in ReactJS",
+				"url":"https://www.bixel.dev",
+				"tags":["ReactJS", "NodeJS", "JavaScript"],
+				"bulletPoints":[]
+			});
+			
+
+			projectsList.push(
+				{"startYear":"2015",
+				"endYear":"2021",
+				"title":"Biri.me Blog",
+				"image":blogBiriMeImage,
+				"description":"Personal blog for storing notes related to IT, Japanese studies, etc.",
+				"url":"https://blog.biri.me",
+				"tags":["PHP","Apache","MySQL","WordPress"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"OpenVMS Systems Administration",
+				"image":openVMSImage,
+				"description":"Performing System Administration for OpenVMS Itanium cluster.",
+				"url":"https://www.vmssoftware.com",
+				"tags":["OpenVMS", "VSI", "VMS"],
+				"bulletPoints":[]
+			});
+
+			
+
+
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"Tape Backup/Restore",
+				"image":tapeBackupImage,
+				"description":"Performing Tape Backups, Restores and Routine Testing of Backups",
+				"url":null,
+				"tags":["Backups", "Restores", "Tape"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"E-mail Server Admin.",
+				"image":processSoftwareImage,
+				"description":"PMDF & PMAS E-Mail Server Administration. Including updates, maint, backups, etc.",
+				"url":"https://www.process.com",
+				"tags":["PMDF", "PMAS", "E-Mail"],
+				"bulletPoints":[]
+			});
+			
+
+			projectsList.push(
+				{"startYear":"2010",
+				"endYear":onGoingThisYear,
+				"title":"Nessus Vuln. Scans",
+				"image":nessusImage,
+				"description":"Performing and Resolving Tenable Nessus scans on our various servers on a regular basis.",
+				"url":null,
+				"tags":["Tenable", "Nessus", "Security"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"BIND DNS Administration",
+				"image":binddnsImage,
+				"description":"Performing Administration of our BIND DNS Redundant Servers and Domains",
+				"url":"https://www.isc.org/bind/",
+				"tags":["BIND", "DNS", "Domains"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2016",
+				"endYear":onGoingThisYear,
+				"title":"VMWare vCenter Admin",
+				"image":vmwareImage,
+				"description":"vCenter Administrator for our ESXi blades, VMs, upgrades, backups, maint. etc",
+				"url":"https://www.vmware.com/",
+				"tags":["VMWare", "vCenter", "ESXi","VDP"],
+				"bulletPoints":[]
+			});
+
+			
+
+			
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"Samba/CIFS Administration",
+				"image":sambaCIFSImage,
+				"description":"Performing Samba (v3)/CIFS (v1) administration, upgrades and hosting on OpenVMS, Linux, etc.",
+				"url":"https://www.samba.org",
+				"tags":["Samba", "CIFS", "Samba", "Shares", "Storage"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2020",
+				"endYear":onGoingThisYear,
+				"title":"Apache Subversion Administration",
+				"image":svnImage,
+				"description":"Migrated from Oracle RedHat Linux server to Ubuntu, perform updates and maintance to SVN server.",
+				"url":"https://subversion.apache.org/",
+				"tags":["Apache", "Subversion", "SVN"],
+				"bulletPoints":[]
+			});
+			
+
+			
+
+			
+
+			projectsList.push(
+				{"startYear":"2019",
+				"endYear":"2020",
+				"title":"Flash Cards",
+				"image":fcardsImage,
+				"description":"Personal ReactJS Flash Cards project that has a RESTful backend.",
+				"url":"https://fcards.biri.me",
+				"tags":["REST", "ReactJS", "API", "NodeJS"],
+				"bulletPoints":[]
+			});
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":"2018",
+				"title":"AI Facial Recognition",
+				"image":gitHubAiFacialRecImage,
+				"description":"Personal ReactJS project that uses an AI API to detect faces in images via URL.",
+				"url":"https://wmollenkopf.github.io/ai-facial-recognition",
+				"tags":["AI", "ReactJS"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2017",
+				"endYear":"2018",
+				"title":"EnspectorPro",
+				"image":enspectorproImage,
+				"description":"EnspectorPro, helping building testers work more easily with building officials.",
+				"url":"https://enspectorpro.com",
+				"tags":["Configuration", "Guides", "Documentation", "Notes"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2017",
+				"endYear":"2017",
+				"title":"Photovoltaic Certification Portal",
+				"image":scpFsecUcfEduImage,
+				"description":"SCP, A website dedicated to certifying solar panels. Uses a combination of .NET and nodeJS servers and an Oracle Database to produce results.",
+				"url":"https://scp.fsec.ucf.edu",
+				"tags":["Serverside Development", "VB.net", "nodeJS", "Oracle"],
+				"bulletPoints":[]
+			});
+
+			
+
+			// projectsList.push(
+			// 	{"startYear":"2016",
+			// 	"endYear":"2016",
+			// 	"title":"Hiragana Hunter",
+			// 	"image":hiraganaHunterImage,
+			// 	"description":"A final game Project for UCF Game AI course.",
+			// 	"url":"https://www.biri.me/hh",
+			// 	"tags":["Unity3D", "C#", "AI"],
+			// 	"bulletPoints":[]
+			// });
+
+			projectsList.push(
+				{"startYear":"2015",
+				"endYear":"2019",
+				"title":"Home Energy Rating Service Development",
+				"image":eghersImage,
+				"description":"Wrote PL/SQL and modPLSQL code to perform various updates to the site.",
+				"url":"http://fsec.ucf.edu/dbase/herspro/help-Overview.html",
+				"tags":["Oracle","PL/SQL", "HERS", "ENGAUGE", "EnergyGauge"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2008",
+				"endYear":"2014",
+				"title":"Solar Rating & Certfication Corp.",
+				"image":secureSolarRatingImage,
+				"description":"Site used for certifying PV Modules & Systems throughout the US.",
+				"url":"https://secure.solar-rating.org",
+				"tags":["Serverside Development", "VB.net"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2008",
+				"endYear":onGoingThisYear,
+				"title":"Computer IT Support",
+				"image":desktopSupportImage,
+				"description":"Performing Basic Desktop IT Support for Staff",
+				"url":null,
+				"tags":["Desktop", "Windows", "PC", "Laptop", "Apple"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2008",
+				"endYear":onGoingThisYear,
+				"title":"Data Logger (Data Sci.)",
+				"image":dataScienceImage,
+				"description":"Collecting, Parsing, Transforming data from:",
+				"url":null,
+				"tags":["DataLoggers", "Data Science"],
+				"bulletPoints":["Campbell Scientific",
+							"La Crosse Technology",
+							"Watts Up",
+							"eMonitor (now siteSage)",
+							"TED – The Energy Detective",
+							"Weather Underground",
+							"Point Six Wireless",
+							"Also Energy",
+							"AcuRite & Acu-Link"
+				]
+			});
+
 
 		const detailedProjectsList = [];
 		detailedProjectsList.push({"year":"2008","titleName":"E-Mail Archiving Software","bulletPoints":[]});
@@ -41,7 +290,7 @@ class Projects extends Component {
 	return (
 		<div className={this.props.backgroundClass}>
 			<div id="cv" className="cvContainer"></div>
-			<div id="projects" className="projectsContainer container">
+			<div id="projects" className="projectsContainer ">
 				<h2>Projects</h2>
 				<blockquote className="blockquote lead">
 					<p className="mb-0">&ldquo;You can do anything you set your mind to.&rdquo;</p>
@@ -51,126 +300,15 @@ class Projects extends Component {
 				<hr />
 
 				<div className="row">
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={bixelDevImage} alt="Bixel.dev" />
-							<figcaption>
-								<h3>Bixel.dev (This)</h3>
-								<p>Personal Webpage re-written in ReactJS</p>
-								<p><strong>Tags:</strong> <br /> ReactJS, NodeJS, JavaScript</p>
-								<a href="https://www.bixel.dev" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
+					{
+                        projectsList.map((item,index) => (
+						<Project key={index} 
+									props={item}
+									 />
+                        ))
+                    }	
 
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={blogBiriMeImage} alt="Biri.me Blog" />
-							<figcaption>
-								<h3>Biri.me Blog</h3>
-								<p>Personal blog for storing notes related to IT, Japanese studies, etc.</p>
-								<p><strong>Tags:</strong> <br />Configuration, Guides, Documentation, Notes</p>
-								<a href="https://blog.biri.me" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={enspectorproImage} alt="EnspectorPro" />
-							<figcaption>
-								<h3>EnspectorPro</h3>
-								<p>EnspectorPro, helping building testers work more easily with building officials.</p>
-								<p><strong>Tags:</strong> <br />Design, Development, PHP, Bootstrap, Fullstack</p>
-								<a href="https://enspectorpro.com" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={scpFsecUcfEduImage} alt="FSEC Solar Photovoltaic Portal" />
-							<figcaption>
-								<h3>Photovoltaic Certification Portal</h3>
-								<p>SCP, certifying solar panels in Florida, USA.</p>
-								<p><strong>Tags:</strong> <br />Serverside Development, VB.net</p>
-								<a href="https://scp.fsec.ucf.edu" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={secureSolarRatingImage} alt="FSEC Solar Photovoltaic Portal" />
-							<figcaption>
-								<h3>Solar Rating & Certfication Corp.</h3>
-								<p>Site used for certifying PV Modules & Systems throughout the US.</p>
-								<p><strong>Tags:</strong> <br />Serverside Development, VB.net</p>
-								<a href="https://secure.solar-rating.org" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={fcardsImage} alt="AI Facial Recognition" />
-							<figcaption>
-								<h3>Flash Cards</h3>
-								<p>Personal ReactJS Flash Cards project that has a RESTful backend.</p>
-								<p><strong>Tags:</strong> <br /> REST, ReactJS, API, NodeJS</p>
-								<a href="https://fcards.biri.me" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={gitHubAiFacialRecImage} alt="AI Facial Recognition" />
-							<figcaption>
-								<h3>AI Facial Recognition</h3>
-								<p>Personal ReactJS project that uses an AI API to detect faces in images via URL.</p>
-								<p><strong>Tags:</strong> <br /> AI, ReactJS</p>
-								<a href="https://wmollenkopf.github.io/ai-facial-recognition" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={hiraganaHunterImage} alt="Hiragana Hunter" />
-							<figcaption>
-								<h3>Hiragana Hunter</h3>
-								<p>A final game Project for UCF Game AI course.</p>
-								<p><strong>Tags:</strong> <br /> Unity3D, C#, AI</p>
-								<a href="https://www.biri.me/hh" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
+				</div>		
 				<div className="row">
 					<div className="col-md-12">
 						<hr />

@@ -8,7 +8,7 @@ h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
 .background-snowblue { background: #DAE6F1; }
-.projectsContainer { max-width: 1280px; padding: 40px 180px; }
+.projectsContainer {padding: 40px 180px; }
 .cvContainer { padding: 0px; margin: 0px; width: 0px; height: 0px; }
 hr { margin: 40px 0px; border-color: #58637d; opacity: 0.2; filter:alpha(opacity=20); }
 
@@ -23,11 +23,15 @@ p.lead a:hover { text-decoration: none; }
 
 #projects .row > div { margin-bottom: 30px; }
 #projects figure { position: relative; overflow: hidden; }
-#projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
+#projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; 
+	padding-bottom: 1px;
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
 #projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
 #projects figure img { width: 110%; }
 #projects figure figcaption {
-    padding: 20px 30px;
+    padding: 10px 20px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -35,7 +39,8 @@ p.lead a:hover { text-decoration: none; }
     width: 100%;
 }
 #projects figure a {
-	z-index: 1000;
+	color: #FFF;
+	/* z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
 	font-size: 0;
@@ -44,10 +49,11 @@ p.lead a:hover { text-decoration: none; }
     top: 0px;
     left: 0px;
     height: 100%;
-    width: 100%;
+    width: 100%; */
 }
 #projects figure .icon { 
 	background: #00489F;
+	color: #FFF;
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -62,8 +68,51 @@ p.lead a:hover { text-decoration: none; }
 
 .projYear {font-weight: bold;}
 
+.figBullets {
+	font-size: .8em;
+	padding-left: 15px;
+}
+
 @media (max-width: 767px) { 
 	.projectsContainer { padding: 60px 20px; min-width: 280px; }
 	#profile .row * { text-align: center; }
 	.hidden-phone { display: none; }
+
+
+
+	#projects figure figcaption {
+		padding: 5px;
+	}
+
+
+	figure.effect img, .showCaption img {
+		opacity: 0.2;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	figure.effect h3, .showCaption h3{
+		opacity: 1;
+		font-size: 1.25em;
+		padding-bottom: 1px;
+		margin-bottom: 1px;
+		margin-top: 1px;
+	}
+	
+	figure hr {height: 1px; margin: 1px; padding: 1px;}
+	
+	figure.effect h3::after, .showCaption h3::after{
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	
+	figure.effect p, figure.effect ul, .showCaption p{
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		font-size: .75em;
+		padding-top: 1px;
+	}
+	
+	
 }  
