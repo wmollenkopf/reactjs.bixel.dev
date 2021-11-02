@@ -23,7 +23,7 @@ const Project = ({props}) => {
                     </p>
                    
                     <p><strong>Tags:</strong> {(tags)?tags.join (", "):""}</p>
-                    <a href={url} target="_blank" rel="noopener noreferrer">
+                    <a href={url} target="_blank" rel="noopener noreferrer" className={(!url||url==="")?"hidden":""}>
                     <span className="icon">
                         <span className="glyphicon glyphicon-new-window"></span>
                     </span>
