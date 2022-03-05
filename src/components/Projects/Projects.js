@@ -20,6 +20,13 @@ import vmwareImage from './images/vmware.png';
 import svnImage from './images/svn.jpg';
 import dataScienceImage from './images/dataScience.png';
 import nessusImage from './images/nessus.png';
+import nakivoImage from './images/nakivo.png';
+import tomcatImage from './images/tomcat.png';
+import siemensPSEImage from './images/siemensProcessSystemsEngineering.png';
+import osipisoftImage from './images/osipisoft.png';
+import dnsblImage from './images/dnsbl.png';
+import analyticsImage from './images/analytics.png';
+
 import { Modal,Button} from 'react-bootstrap';
 import Project from './Project';
 
@@ -82,6 +89,7 @@ class Projects extends Component {
 			});
 
 			
+			
 
 
 
@@ -142,8 +150,42 @@ class Projects extends Component {
 			});
 
 			
+			projectsList.push(
+				{"startYear":"2020",
+				"endYear":onGoingThisYear,
+				"title":"Nakivo VM Backups",
+				"image":nakivoImage,
+				"description":"Managing Nakivo Software and VM Backups",
+				"url":null,
+				"tags":["Nakivo", "VM", "Data Recovery"],
+				"bulletPoints":[]
+			});
 
 			
+			projectsList.push(
+				{"startYear":"2021",
+				"endYear":onGoingThisYear,
+				"title":"OSI Pi Soft",
+				"image":osipisoftImage,
+				"description":"Administrating Pi Servers, Pi Data, Collecting, Parsing, Transforming data, etc.",
+				"url":null,
+				"tags":["DataLoggers", "Data Science", "OSI Pi Soft"],
+				"bulletPoints":["Pi Data Archive",
+							"Pi Asset Framework",
+							"Pi Vision"
+				]
+			});
+
+			projectsList.push(
+				{"startYear":"2021",
+				"endYear":onGoingThisYear,
+				"title":"Siemens Process Systems Engineering",
+				"image":siemensPSEImage,
+				"description":"Managing Siemens PSE Servers/Devices",
+				"url":null,
+				"tags":["Siemens", "PSE", "Process Systems Engineering"],
+				"bulletPoints":[]
+			});
 
 			projectsList.push(
 				{"startYear":"2018",
@@ -153,6 +195,28 @@ class Projects extends Component {
 				"description":"Performing Samba (v3)/CIFS (v1) administration, upgrades and hosting on OpenVMS, Linux, etc.",
 				"url":"https://www.samba.org",
 				"tags":["Samba", "CIFS", "Samba", "Shares", "Storage"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"Apache Tomcat",
+				"image":tomcatImage,
+				"description":"Managing Apache Tomcat Server and Tomcat Applications",
+				"url":null,
+				"tags":["Tomcat", "Apache", "Java"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2021",
+				"endYear":onGoingThisYear,
+				"title":"Domain Name System BlockLists",
+				"image":dnsblImage,
+				"description":"Managing DNS BlockLists to significantly reduce spam.",
+				"url":null,
+				"tags":["PMDF", "PMAS", "DNSBL","DNS","Spam","E-mail"],
 				"bulletPoints":[]
 			});
 
@@ -251,6 +315,17 @@ class Projects extends Component {
 			});
 
 			projectsList.push(
+				{"startYear":"2021",
+				"endYear":onGoingThisYear,
+				"title":"OpenVMS T4 System Analytics Collection",
+				"image":analyticsImage,
+				"description":"Performing Collection of OpenVMS System Performance Data in order to monitor and inspect unexpected behavior.",
+				"url":null,
+				"tags":["OpenVMS", "T4", "VSI", "HPE"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
 				{"startYear":"2008",
 				"endYear":onGoingThisYear,
 				"title":"Computer IT Support",
@@ -280,6 +355,12 @@ class Projects extends Component {
 							"AcuRite & Acu-Link"
 				]
 			});
+
+			
+
+			
+
+			
 
 
 		const detailedProjectsList = [];
@@ -650,6 +731,7 @@ class Projects extends Component {
 							<li><span className="projYear">2019:</span> Installing and Configuring vCenter 6.7u2</li>
 							<li><span className="projYear">2019:</span> Assisting with Smart Deploy configuration, set up, and deployment</li>
 							<li><span className="projYear">2019:</span> Setting up and managing Single Sign On for vCenter</li>
+							
 							<li><span className="projYear">2019:</span> Setting up and troubleshooting a network of various routers, switches, wireless bridges, etc for the purpose of data collection at a remote	site</li>
 							<li><span className="projYear">2019:</span> Managing Adobe Cloud Creative Cloud products, users, etc</li>
 							<li><span className="projYear">2019:</span> Installing a fallback HPe OnBoard Administrator</li>
@@ -657,9 +739,54 @@ class Projects extends Component {
 							<li><span className="projYear">2019:</span> Updating HPe Virtual Connect</li>
 							<li><span className="projYear">2019:</span> Updating HPe Virtual Connect</li>
 							<li><span className="projYear">2018-2019:</span> Migrating Windows 7 PCs to Windows 10 PCs</li>
+							<li><span className="projYear">2018-2020:</span> Managing VDP Backups</li>
+							<li><span className="projYear">2020:</span> Set up Nakivo Backup Software</li>
 							<li><span className="projYear">2020:</span> Upgraded HPE OpenVMS to VSI OpenVMS</li>
+							<li><span className="projYear">2020:</span> Upgrading Servers to TLS 1.2+</li>
+							<li><span className="projYear">2020:</span> Setting up New ESXi Blade Servers</li>
+							<li><span className="projYear">2021:</span> OpenVMS Cluster Upgraded To Latest Version 8.4.2LU3</li>
+							<li><span className="projYear">2021:</span> Oracle 11g installed On OpenVMS successfully</li>
 							<li><span className="projYear">2021:</span> Upgraded OpenVMS Samba CIFS v1 to OpenVMS Samba v4</li>
-							
+							<li><span className="projYear">2021:</span> Tape Restore Documentation And Experience
+								<ul className="hidden-phone">
+									<li>Restored Disk Image</li>
+									<li>Restored Individual Files</li>
+									<li>Documented procedures for Restoring as well as how we manage our backups to tape.</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> Process Systems Engineering Servers Installed and Configured</li>
+							<li><span className="projYear">2021:</span> Expanded ShadowSet Userdisk Storage with minimal downtime</li>
+							<li><span className="projYear">2021:</span> Resolved Energy OpenVMS Death with minimal downtime</li>
+							<li><span className="projYear">2021:</span> Audit Documentation Compiled and Submitted Twice</li>
+							<li><span className="projYear">2021:</span> Tomcat Server and FSEC Store Installed and Migrated to a Windows Server</li>
+							<li><span className="projYear">2021:</span> Oracle Shadow Disk Expansion with minimal downtime</li>
+							<li><span className="projYear">2021:</span> OpenVMS Defragmentation Software Installed
+								<ul className="hidden-phone">
+									<li>OpenVMS Disks Defragmented for the first time ever!</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> T4 OpenVMS Comprehensive Systems Monitoring Software Completely Installed and Running</li>
+							<li><span className="projYear">2021:</span> Researched and found DNSBL (DNS Block List) Solution to fight intruders.
+								<ul className="hidden-phone">
+									<li>Installed and Configured DNSBL to help fight off spam and DDoS intruders</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> Fought off Intruders literally day and night interactively.
+								<ul className="hidden-phone">
+									<li>Took proactive measures to significantly reduce and prevent intrusions and bring back stability to our systems. One such measure is the aforementioned DNSBL.</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> Drastically increased performance of our E-Mail Storage Drive
+								<ul className="hidden-phone">
+									<li>Archived millions of e-mail files off of our userdisk drive, from previous employees with no need to such e-mails.</li>
+									<li>By reducing Userdisk E-Mail Files and Defragmenting of the disk, was able to reduce weekly tape backup by over 12 Hours! (+30% improvement!)</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> Created the Don't Panic Emergency Documentation
+								<ul className="hidden-phone">
+									<li>Documentation has immediate lookup details for how to bring back our systems in the most critical of downtime scenarios from nothing.</li>
+								</ul>
+							</li>
 						</ul>
 
 						<h4 style={{textAlign:"center",marginTop:"15px"}}>Ongoing Projects</h4>
@@ -681,7 +808,7 @@ class Projects extends Component {
 							<li><span className="projYear">2018-Present:</span> Resolving TLS issues for servers</li>
 							<li><span className="projYear">2018-Present:</span> Managing DNS Entries</li>
 							<li><span className="projYear">2018-Present:</span> Installing and Managing ESXi Host Blade Servers</li>
-							<li><span className="projYear">2018-Present:</span> Managing VDP Backups</li>
+							<li><span className="projYear">2018-2020:</span> Managing Nakivo Backups</li>							
 							<li><span className="projYear">2018-Present:</span> Updating ESXi Hypervisor servers with firmware, drivers and patches</li>
 							<li><span className="projYear">2018-Present:</span> Managing system batch job queues on OpenVMS Cluster</li>
 							<li><span className="projYear">2018-Present:</span> Performing OpenVMS username changes affecting services such as e-mail, shares, website logins, etc.</li>
